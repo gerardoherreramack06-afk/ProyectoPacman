@@ -76,7 +76,7 @@
                 for (let col = 0; col < cols; col++) {
                     if ((row === 0 || row === rows - 1 || col === 0 || col === cols - 1) || 
                         (row % 2 === 0 && col % 2 === 0)) {
-                        ctx.fillStyle = 'blue';
+                        ctx.fillStyle = 'green';  // Cambio de azul a verde
                         ctx.fillRect(col * cellSize, row * cellSize, cellSize, cellSize);
                     } else {
                         dots.push({ x: col * cellSize + cellSize / 2, y: row * cellSize + cellSize / 2 });
@@ -200,4 +200,5 @@
     </script>
 </body>
 </html>
+
 
